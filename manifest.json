@@ -1,0 +1,22 @@
+{
+  "name": "Github Collapse Conversations",
+  "version": "0.0.1",
+  "manifest_version": 2,
+
+  "icons": {
+    "16": "icon-16.png",
+    "48": "icon-48.png",
+    "64": "icon-64.png",
+    "128": "icon-128.png"
+  },
+
+  "description": "Hide unimportant conversations when reviewing pull requests",
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["lib/collapse_conversations.js"]
+    }
+  ],
+  "homepage_url": "https://github.com/damianw/github-collapse-conversations",
+  "offline_enabled": true
+}
